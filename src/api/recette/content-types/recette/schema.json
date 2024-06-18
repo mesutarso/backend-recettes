@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recettes",
+  "info": {
+    "singularName": "recette",
+    "pluralName": "recettes",
+    "displayName": "recette",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "montant": {
+      "type": "decimal"
+    },
+    "regie": {
+      "type": "enumeration",
+      "enum": [
+        "DGDA",
+        "DGI",
+        "DGRAD"
+      ]
+    },
+    "mois": {
+      "type": "enumeration",
+      "enum": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ]
+    },
+    "annee": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "prevision",
+        "realisation"
+      ]
+    }
+  }
+}
